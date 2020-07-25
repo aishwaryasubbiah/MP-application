@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="stylesheet" href="sty.css">
+
+<style>
+body{
+background-image: url("dim.jpg");
+background-size: cover;
+
+}
+
+.button{
+background-color: slateblue;
+border:none;
+color: white;
+padding: 10px 15px 10px 15px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:20px;
+margin: 2x 2px;
+cursor:pointer;
+border-radius: 12px;
+}
+
+
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="firstfirstpage.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  	<center><button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">STUDENT</button></center>
+		<div id="id03" class="modal">
+		
+		<center><form class="modal-content animate" action="/action_page.php" method="post">
+		<div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+	<img src="avatar.png" style="width:50%;">
+		</div>
+			<div class="container">
+      <label for="uname"><b>SecretKey</b></label><br><br>
+      <input type="text" placeholder="Enter SecretKey" name="uname" required><br><br>
+	   <a href="studentpage.html" class="button">Login</a><br>
+			</div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form></center>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br> <br> <br>
+   <center><button onclick="document.getElementById('id04').style.display='block'" style="width:auto;">TEACHER</button></center>
+		<div id="id04" class="modal">
+	
+  <form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<img src="avatar.png" style="width:50%;">
+			</div>
+
+			<div class="container">
+      <label for="uname"><b>Username</b></label><br><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw"><b>Password</b></label><br><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+	  
+	   <a href="teacherpage.html" class="button">Login</a><br>
+
+	 	  <label>
+        <input type="checkbox" checked="unchecked" name="remember"> Remember me
+      </label>
+			</div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div> 
+  </form>
+	</div>
+</div>
+</body>
+</html>
+

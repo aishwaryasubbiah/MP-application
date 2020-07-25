@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload Files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	
+<style>
+body{
+
+background-size: cover;
+background-image: url("ui.JPG");
+}
+.button{
+background-color: Gray;
+border:none;
+color: white;
+padding: 10px 15px 10px 15px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:20px;
+margin: 2x 2px;
+cursor:pointer;
+border-radius: 12px;
+}
+h1
+{
+    color:gold;  
+}
+</style>
+</head>
+<body>
+<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My App</header>
+  <ul>
+    <li><a href="userlogin.html"><i class="fas fa-qrcode"></i>Home</a></li>
+	<li><a href="gallery.html"><i class="fas fa-stream"></i>Gallery</a></li>
+    <li><a href="video.html"><i class="fas fa-calendar-week"></i>Videos</a></li>
+     </ul>
+	
+</div>
+
+
+ <div>
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form method="POST" enctype="multipart/form-data" align="center">
+        
+        <input type="file" name="uploadedFile" /> <br > <br >
+		<button onclick="myFunction()" class="button">Upload</button>
+   
+    </form>
+</div>
+   </body>
+
+<script>
+function myFunction() {
+  alert("Your petition has been uploaded");
+}/
+</script>
+
+
+</html>
